@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/planets.css" rel="stylesheet">
+    <title>Planeter</title>
+</head>
+<body>
+    <div class="MenuWrap">
+		<a href="albumPage.html" class="ListItem">Start Page</a>
+        <a href="index.html" class="ListItem">All pictures</a>
+		<a href="galaxies.html" class="ListItem">Galaxies</a>
+		<a href="hubbleTelescope.html" class="ListItem">Hubble Telescope</a>
+		<a href="nebulos.html" class="ListItem">Nebulus</a>
+        <a href="newBornStars.html" class="ListItem newBornStars">Newborn Stars</a>
+		<a href="planets.html" class="LastItem planets">Planets</a>
+	</div>
+    <div id="pics-from-planets-album-div">
+        <p> <br> </p>
+        <!--
+            Album pictures Planets
+        -->
+    </div>
+
+
+    <div class="image-container" id="picsFromPlanetsAlbum"> </div>
+    <div class="slideshow-button">
+      <button id="startSlideshow">Starta slideshow</button>
+    </div>
+
+
+      <div class="modal-wrapper" id="modal-wrapper">
+          <div class="modal-content" id="modalImg">
+        </div>
+    </div>
+
+    <script type="module" src="./script/planets.js"></script>
+</body>
+</html>

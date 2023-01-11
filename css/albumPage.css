@@ -1,0 +1,104 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+
+}
+
+.FlexWrap {
+  background: rgb(109, 132, 245);
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 100vw;
+  text-align: center;
+  
+  display: flex;
+  flex-wrap: wrap;     
+  align-items: center;
+  position: absolute;
+  justify-content: space-around;
+
+ 
+}
+
+.FlexItemAlbum {
+  height: 150px;
+  width: 300px;     
+  display: flex;
+  align-items: center;       
+  justify-content: center;
+  
+}
+
+
+.allPictures{
+    background-image: url(/app-data/library/pictures/album-header/GSFC_20171208_Archive_e000383~small.jpg);
+    background-size: cover;
+   
+}
+
+.galaxies{
+    background-image: url(/app-data/library/pictures/galaxies/0700064~orig.jpg);
+    background-size: cover;
+}
+
+.hubbleTelescope{
+    background-image: url(/app-data/library/pictures/hubble-telescope/8913467~orig.jpg);
+    background-size: cover;
+
+}
+.nebulos{
+    background-image: url(/app-data/library/pictures/nebulas/GSFC_20171208_Archive_e000226~small.jpg);
+    background-size: cover;
+    
+}
+
+.newBornStars{
+    background-image: url(/app-data/library/pictures/newborn-stars/GSFC_20171208_Archive_e001955~small.jpg);
+    background-size: cover;
+
+}
+.planets{
+    background-image: url(/app-data/library/pictures/planets/PIA05982~small.jpg);
+    background-size: cover;
+
+}
+
+
+.FlexItemAlbum:hover{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    
+}
+
+/***********************  TEXT/LINK INSIDE FLEXBOX   ************************************************/
+
+.FlexWrap a{
+    color: white;
+}
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+  /*********************** MEDIA QUERY ************************/
+  @media screen and (max-width: 600px) {
+  .FlexWrap {
+    background: rgb(109, 132, 245);
+    overflow:scroll;
+  }
+}
+  
+

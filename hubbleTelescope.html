@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/hubbleTelescope.css" rel="stylesheet">
+    <title>Teleskoper</title>
+</head>
+<body>
+    <div class="MenuWrap">
+		<a href="albumPage.html" class="ListItem startPage">Startsida</a>
+        <a href="index.html" class="ListItem allPictures">Alla bilder</a>
+		<a href="galaxies.html" class="ListItem galaxies">Galaxer</a>
+		<a href="hubbleTelescope.html" class="ListItem hubbleTelescope">Hubble teleskop</a>
+		<a href="nebulos.html" class="ListItem nebulos">Nebulusor</a>
+        <a href="newBornStars.html" class="ListItem newBornStars">Nnyfödda stjärnor</a>
+		<a href="planets.html" class="LastItem planets">Planeter</a>
+	</div>
+    <div id="pics-from-hubbleTelescope-album-div">
+        <p> <br> </p>
+        <!--
+        Album Hubble Telescope pictures
+        -->
+    </div>
+
+    <div class="image-container" id="picsFromHubbleTelescopeAlbum"> </div>
+    <div class="slideshow-button">
+      <button id="startSlideshow">Starta slideshow</button>
+    </div>
+
+      <div class="modal-wrapper" id="modal-wrapper">
+          <div class="modal-content" id="modalImg">
+        </div>
+    </div>
+
+    <script type="module" src="./script/hubbleTelescope.js"></script>
+</body>
+</html>

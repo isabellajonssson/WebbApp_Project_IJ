@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>appPictureLibrary</title>
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="./css/appPictureLibrary.css" />
+</head>
+<body>
+  
+  <div class="MenuWrap">
+		<a href="albumPage.html" class="ListItem startPage">Startsida</a>
+        <a href="index.html" class="ListItem allPictures">Alla bilder</a>
+		<a href="galaxies.html" class="ListItem galaxies">Galaxer</a>
+		<a href="hubbleTelescope.html" class="ListItem hubbleTelescope">Hubble teleskop</a>
+		<a href="nebulos.html" class="ListItem nebulos">Nebulusor</a>
+        <a href="newBornStars.html" class="ListItem newBornStars">Nyfödda stjärnor</a>
+		<a href="planets.html" class="LastItem planets">Planeter</a>
+	</div>
+
+  <div class="FlexWrap" id="FlexWrapId">
+    <!-- <div class="FlexItem" id="FlexItemId"> -->
+       <!-- Below is being rendered in the js
+    <div class="FlexItem">
+    </div>
+    -->
+  </div>
+
+  <!-- Modal for images -->
+
+  <div class="modal-wrapper" id="modal-wrapper">
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <h2 contenteditable="true" id="imgTitle"></h2>
+    <p id="imgComment"></p>
+  </div>
+</div>
+
+  <script type="module" src="./script/appPictureLibrary.js"></script>
+
+</body>
+
+</html>

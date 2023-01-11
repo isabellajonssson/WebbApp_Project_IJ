@@ -1,0 +1,119 @@
+html,
+body {
+
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,0,0,1) 100%);
+}
+/**************************** ALBUM IMAGES *************************************/
+div img {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height:auto;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	object-fit: scale-down;
+    overflow: hidden;
+	margin: 15px;
+	padding: 15px;
+	left: 25%;
+
+
+}
+  
+
+/********************************* MENU ************************************/
+.MenuWrap {
+	background-color: rgba(0, 0, 0, 0.713);
+	color: #ebebeb;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2rem;
+	height: 5.75rem;
+	display: flex;
+	align-items: center;
+	padding: 0 1rem;
+}
+
+.ListItem, .LastItem {
+	display: flex;
+	color:#ebebeb;
+	text-decoration: none;  /* removes the classic link underline */
+}
+
+.ListItem {
+	margin-right: auto;	
+}
+
+.LastItem {
+	margin-right: auto;	
+}
+
+a:hover{
+    color:orange;
+}
+ .galaxies{
+    color: orange;
+    
+ }
+
+ /******************************* SLIDESHOW ******************************************/
+
+ #picsFromGalaxiesAlbum img.selected {
+	background:rgba(0, 0, 0, 0.713)
+
+  }
+  .modal-wrapper {
+	display: none; /* Initially hide the modal */
+	position: fixed; /* Stay in place */
+	z-index: 999; /* Sit on top */
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.695);
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .modal-content{
+	position: relative;
+	flex-wrap: wrap;
+	height: 140px;
+  }
+
+  .slideshow-button{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+
+ }
+ /* Slideshow button */
+ #startSlideshow{
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	height: 40px;
+	width: 100px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.599);
+	cursor: pointer;
+	
+ }
+  
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
