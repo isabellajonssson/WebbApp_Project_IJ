@@ -5,7 +5,7 @@ import * as proto from './picture-album-prototypes.js';
 import * as lib from './picture-library.js';
 
 const libraryDir = "app-data/library";
-const libraryJSON ="picture-library.json";
+const libraryJSON = "picture-library.json";
 
 class pictureLibraryBrowser extends lib.pictureLibrary {
 
@@ -13,24 +13,45 @@ class pictureLibraryBrowser extends lib.pictureLibrary {
         super();
     }
 
+    // fetch localstorage
+    static async fetch() {
+        let data = JSON.parse(window.localStorage.getItem("library"));
+        if (typeof data === "undefined" || data == null || !data) {
+            data = await pictureLibraryBrowser.loadFromJson();
+        } return data;
+    }
+
+    // save in local storage
+    static async save(data) {
+        window.localStorage.setItem("library", JSON.stringify(data));
+
+    }
+
+    // load data from json on computer
+    static async loadFromJson() {
+        const data = await pictureLibraryBrowser.fetchJSON(libraryJSON);
+        pictureLibraryBrowser.save(data);
+        return data;
+    }
+
     static async fetchJSON(file) {
         try {
             const url = `../${libraryDir}/${file}`;
             const response = await fetch(url);
             if (response.status >= 200 && response.status < 400) {
-    
+
                 const library = await response.json();
                 lib.pictureLibrary.attachPrototypes(library);
- 
+
                 return library;
-    
+
             } else {
                 // Handle server error
                 // example: INTERNAL SERVER ERROR: 500 error
                 console.log(`${response.statusText}: ${response.status} error`);
             }
         } catch (error) {
-    
+
             alert('Failed to recieved data from server');
             console.log('Failed to recieved data from server');
         }
@@ -63,4 +84,4 @@ class pictureLibraryBrowser extends lib.pictureLibrary {
 })();
 */
 
-export {pictureLibraryBrowser};
+export { pictureLibraryBrowser };
