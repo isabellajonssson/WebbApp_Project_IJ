@@ -23,50 +23,50 @@ class albumsTemplate {
             //properties needs to be writable and enumaberable to be able to use JSON.stringify(..)
             Object.create(prototypeAlbum,
                 {
-                    id: { value: uniqueId(), writeable: true, enumerable: true },
-                    title: { value: "Galaxies", writeable: true, enumerable: true },
-                    comment: { value: "There are inifinte of them in the universe", writeable: true, enumerable: true },
-                    path: { value: `${pictureDir}/galaxies`, writeable: true, enumerable: true },
-                    headerImage: { value: `${pictureDir}/album-header/PIA04921~small.jpg`, writeable: true, enumerable: true },
-                    pictures: { value: picturesTemplate.galaxies(), writeable: true, enumerable: true }
+                    id: { value: uniqueId(), writable: true, enumerable: true },
+                    title: { value: "Galaxies", writable: true, enumerable: true },
+                    comment: { value: "There are inifinte of them in the universe", writable: true, enumerable: true },
+                    path: { value: `${pictureDir}/galaxies`, writable: true, enumerable: true },
+                    headerImage: { value: `${pictureDir}/album-header/PIA04921~small.jpg`, writable: true, enumerable: true },
+                    pictures: { value: picturesTemplate.galaxies(), writable: true, enumerable: true }
                 }),
 
             Object.create(prototypeAlbum,
                 {
-                    id: { value: uniqueId(), writeable: true, enumerable: true },
-                    title: { value: "Nebulas", writeable: true, enumerable: true },
-                    comment: { value: "Image that a cloud of gas could be this beautiful", writeable: true, enumerable: true },
-                    path: { value: `${pictureDir}/nebulas`, writeable: true, enumerable: true },
-                    headerImage: { value: `${pictureDir}/album-header/GSFC_20171208_Archive_e000383~small.jpg`, writeable: true, enumerable: true },
-                    pictures: { value: picturesTemplate.nebulas(), writeable: true, enumerable: true }
+                    id: { value: uniqueId(), writable: true, enumerable: true },
+                    title: { value: "Nebulas", writable: true, enumerable: true },
+                    comment: { value: "Image that a cloud of gas could be this beautiful", writable: true, enumerable: true },
+                    path: { value: `${pictureDir}/nebulas`, writable: true, enumerable: true },
+                    headerImage: { value: `${pictureDir}/album-header/GSFC_20171208_Archive_e000383~small.jpg`, writable: true, enumerable: true },
+                    pictures: { value: picturesTemplate.nebulas(), writable: true, enumerable: true }
                 }),
 
             Object.create(prototypeAlbum,
                 {
-                    id: { value: uniqueId(), writeable: true, enumerable: true },
-                    title: { value: "Newborn stars", writeable: true, enumerable: true },
-                    comment: { value: "A star is born", writeable: true, enumerable: true },
-                    path: { value: `${pictureDir}/newborn-stars`, writeable: true, enumerable: true },
-                    headerImage: { value: `${pictureDir}/album-header/A Galactic Spectacle_4862916839_o~small.jpg`, writeable: true, enumerable: true },
-                    pictures: { value: picturesTemplate.newbornStars(), writeable: true, enumerable: true }
+                    id: { value: uniqueId(), writable: true, enumerable: true },
+                    title: { value: "Newborn stars", writable: true, enumerable: true },
+                    comment: { value: "A star is born", writable: true, enumerable: true },
+                    path: { value: `${pictureDir}/newborn-stars`, writable: true, enumerable: true },
+                    headerImage: { value: `${pictureDir}/album-header/A Galactic Spectacle_4862916839_o~small.jpg`, writable: true, enumerable: true },
+                    pictures: { value: picturesTemplate.newbornStars(), writable: true, enumerable: true }
                 }),
             Object.create(prototypeAlbum,
                 {
-                    id: { value: uniqueId(), writeable: true, enumerable: true },
-                    title: { value: "Planets", writeable: true, enumerable: true },
-                    comment: { value: "Checkout some amazing pictures of our neighbours", writeable: true, enumerable: true },
-                    path: { value: `${pictureDir}/planets`, writeable: true, enumerable: true },
-                    headerImage: { value: `${pictureDir}/album-header/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~small.jpg`, writeable: true, enumerable: true },
-                    pictures: { value: picturesTemplate.planets(), writeable: true, enumerable: true }
+                    id: { value: uniqueId(), writable: true, enumerable: true },
+                    title: { value: "Planets", writable: true, enumerable: true },
+                    comment: { value: "Checkout some amazing pictures of our neighbours", writable: true, enumerable: true },
+                    path: { value: `${pictureDir}/planets`, writable: true, enumerable: true },
+                    headerImage: { value: `${pictureDir}/album-header/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~small.jpg`, writable: true, enumerable: true },
+                    pictures: { value: picturesTemplate.planets(), writable: true, enumerable: true }
                 }),
             Object.create(prototypeAlbum,
                 {
-                    id: { value: uniqueId(), writeable: true, enumerable: true },
-                    title: { value: "Hubble telescope", writeable: true, enumerable: true },
-                    comment: { value: "All the pictures were taken by this amazing telescope", writeable: true, enumerable: true },
-                    path: { value: `${pictureDir}/hubble-telescope`, writeable: true, enumerable: true },
-                    headerImage: { value: `${pictureDir}/album-header/GSFC_20171208_Archive_e002151~small.jpg`, writeable: true, enumerable: true },
-                    pictures: { value: picturesTemplate.hubbleTelescope(), writeable: true, enumerable: true }
+                    id: { value: uniqueId(), writable: true, enumerable: true },
+                    title: { value: "Hubble telescope", writable: true, enumerable: true },
+                    comment: { value: "All the pictures were taken by this amazing telescope", writable: true, enumerable: true },
+                    path: { value: `${pictureDir}/hubble-telescope`, writable: true, enumerable: true },
+                    headerImage: { value: `${pictureDir}/album-header/GSFC_20171208_Archive_e002151~small.jpg`, writable: true, enumerable: true },
+                    pictures: { value: picturesTemplate.hubbleTelescope(), writable: true, enumerable: true }
                 })
         ];
     }

@@ -16,6 +16,7 @@ class pictureLibraryBrowser extends lib.pictureLibrary {
     // fetch localstorage
     static async fetch() {
         let data = JSON.parse(window.localStorage.getItem("library"));
+            console.log("Fetched data from localStorage:", data); // Lägg till detta
         if (typeof data === "undefined" || data == null || !data) {
             data = await pictureLibraryBrowser.loadFromJson();
         } return data;
@@ -23,6 +24,7 @@ class pictureLibraryBrowser extends lib.pictureLibrary {
 
     // save in local storage
     static async save(data) {
+        console.log("Saving data to localStorage:", data); // Lägg till detta
         window.localStorage.setItem("library", JSON.stringify(data));
 
     }
@@ -30,6 +32,7 @@ class pictureLibraryBrowser extends lib.pictureLibrary {
     // load data from json on computer
     static async loadFromJson() {
         const data = await pictureLibraryBrowser.fetchJSON(libraryJSON);
+            console.log("Loaded data from JSON:", data); // Lägg till detta
         pictureLibraryBrowser.save(data);
         return data;
     }
@@ -41,6 +44,7 @@ class pictureLibraryBrowser extends lib.pictureLibrary {
             if (response.status >= 200 && response.status < 400) {
 
                 const library = await response.json();
+                console.log("Fetched JSON from URL:", library); // Lägg till detta
                 lib.pictureLibrary.attachPrototypes(library);
 
                 return library;
